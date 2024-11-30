@@ -1,0 +1,153 @@
+/* إعادة تعيين الأساسيات */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #007bff;
+    color: white;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.upload-section {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.upload-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.upload-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 280px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    padding: 12px;
+    background-color: #e2e2e2;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.preview-container {
+    margin-top: 20px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.preview-container img,
+.preview-container video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.conversion-options {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.options-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+select {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.output-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .upload-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .upload-box {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .options-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

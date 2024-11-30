@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FileSwitch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>موقع تحويل الصيغ للصور والفيديوهات</h1>
+        <p>حوّل صورك وفيديوهاتك بسهولة باستخدام صيغ متعددة وأدوات متقدمة</p>
+    </header>
+
+    <section class="upload-section">
+        <div class="upload-container">
+            <div class="upload-box">
+                <h2>تحميل صورة</h2>
+                <input type="file" id="imageUpload" accept="image/*">
+                <div id="imagePreview" class="preview-container"></div>
+            </div>
+
+            <div class="upload-box">
+                <h2>تحميل فيديو</h2>
+                <input type="file" id="videoUpload" accept="video/*">
+                <div id="videoPreview" class="preview-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="conversion-options">
+        <h2>اختيارات التحويل</h2>
+        <div class="options-container">
+            <div class="image-options">
+                <label for="imageFormat">اختر صيغة الصورة:</label>
+                <select id="imageFormat">
+                    <option value="jpg">JPG</option>
+                    <option value="png">PNG</option>
+                    <option value="gif">GIF</option>
+                    <option value="bmp">BMP</option>
+                    <option value="tiff">TIFF</option>
+                    <option value="webp">WEBP</option>
+                </select>
+                <button id="convertImage">تحويل الصورة</button>
+            </div>
+            <div class="video-options">
+                <label for="videoFormat">اختر صيغة الفيديو:</label>
+                <select id="videoFormat">
+                    <option value="mp4">MP4</option>
+                    <option value="webm">WebM</option>
+                    <option value="avi">AVI</option>
+                    <option value="mov">MOV</option>
+                    <option value="flv">FLV</option>
+                    <option value="mkv">MKV</option>
+                </select>
+                <button id="convertVideo">تحويل الفيديو</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="output-section">
+        <h2>نتائج التحويل</h2>
+        <div id="output"></div>
+    </section>
+
+    <footer>
+        <p>حقوق النشر &copy; 2024 <strong>جودي</strong>. جميع الحقوق محفوظة.</p>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
